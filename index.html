@@ -5,10 +5,222 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bazar NSA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    
+    <!--HEADER-->
+    <header class="head-container container-default">
+        <a href="index.html"><h3 class="logo">Bazar NSA</h3></a>
+        <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+        <nav class="menu">
+            <a class="btn-close"><i class="fa fa-times"></i></a>
+            <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">65 anos de tradição</a></li>
+            <li><a href="#">Bazar&Papelaria</a></li>
+            <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="intro container-default">
+        <div class="intro-description" id="intro-mobile">
+            <h2>Cliente,</h2>
+            <h2>nos envie as</h2>
+            <h2>informações da sua</h2>
+            <h2>lista de material</h2>
+            <h3>Que nós retornaremos nosso orçamento.</h3>
+        </div>
+        <div class="intro-description" id="intro-fullscreen">
+            <h2>Prezado Cliente, o Bazar NSA</h2>
+            <h2>Assume o compromisso de</h2>
+            <h2>entregar o seu pedido no</h2>
+            <h2>conforto de sua casa</h2>
+            <br>                            
+            <h2><i class="fa fa-check"></i>  Qualidade</h2>
+            <h2><i class="fa fa-check"></i>  Segurança</h2>
+            <h2><i class="fa fa-check"></i>  Mais Economia para o seu bolso</h2>
+        </div>
+        <div class="intro-form">
+            <form>
+                <h2>Envie as informações da sua lista de material.</h2>
+                <h3>Que nós retornaremos nosso orçamento.</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome:">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email: name@example.com">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Cidade: ">
+                        </div>
+                        <div class="col-6">
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Bairro: ">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Envie sua lista</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Nos conte mais detalhes:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Escola, grau de ensino, telefone para contato, whatsapp..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="float: right; margin-right: 20px;">Submit</button>
+                </form>
+                <!---- ##   -->
+                <!-- <div class="form-group row">
+                    <div class="col-4" style="padding: 0;">
+                        <label for="staticEmail">Lápis: </label>
+                    </div>
+                    <div class="col-5" style="padding-right: 5px; padding-left: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>Faber Castel</option>
+                            <option>Multi-Color</option>
+                        </select>
+                    </div>
+                    <div class="col-3" style="padding: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>0</option>
+                            <option>1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4" style="padding: 0;">
+                        <label for="staticEmail">Caneta: </label>
+                    </div>
+                    <div class="col-5" style="padding-right: 5px; padding-left: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>Faber Castel</option>
+                            <option>Multi-Color</option>
+                        </select>
+                    </div>
+                    <div class="col-3" style="padding: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>0</option>
+                            <option>1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-12" style="padding: 0;">
+                        <label for="staticEmail">Caderno Brochura:</label>
+                    </div>
+                    <div class="col-4" style="padding: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>capa dura</option>
+                            <option>capa mole</option>
+                        </select>
+                    </div>
+                    <div class="col-4" style="padding: 0 5px;">
+                        <select id="inputState" class="form-control">
+                            <option selected>48fls</option>
+                            <option>96fls</option>
+                        </select>
+                    </div>
+                    <div class="col-4" style="padding: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>1/4</option>
+                            <option>1x1</option>
+                            <option>1x10</option>
+                            <option>1x15</option>
+                            <option>1x20</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-12" style="padding: 0;">
+                        <label for="staticEmail">Caderno Spiral:</label>
+                    </div>
+                    <div class="col-4" style="padding: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>capa dura</option>
+                            <option>capa mole</option>
+                        </select>
+                    </div>
+                    <div class="col-4" style="padding: 0 5px;">
+                        <select id="inputState" class="form-control">
+                            <option selected>48fls</option>
+                            <option>96fls</option>
+                        </select>
+                    </div>
+                    <div class="col-4" style="padding: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>1/4</option>
+                            <option>1x1</option>
+                            <option>1x10</option>
+                            <option>1x15</option>
+                            <option>1x20</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4" style="padding: 0;">
+                        <label for="staticEmail">Lápis de cor: </label>
+                    </div>
+                    <div class="col-5" style="padding-right: 5px; padding-left: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>Faber Castel</option>
+                            <option>Multi-Color</option>
+                        </select>
+                    </div>
+                    <div class="col-3" style="padding: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>0</option>
+                            <option>1</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4" style="padding: 0;">
+                        <label for="staticEmail">Canetinha: </label>
+                    </div>
+                    <div class="col-5" style="padding-right: 5px; padding-left: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>Faber Castel</option>
+                            <option>Multi-Color</option>
+                        </select>
+                    </div>
+                    <div class="col-3" style="padding: 0;">
+                        <select id="inputState" class="form-control">
+                            <option selected>0</option>
+                            <option>1</option>
+                        </select>
+                    </div>
+                </div> -->
+                
+                
+            </form>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer class="rodape-container container-default">
+        <a href="#myPage" id="toTop"><i class="fa fa-chevron-up"></i></a><br>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div><br>
+        <p class="copyright">
+            @Copyright - Todos os direitos reservados.
+        </p>
+    </footer>
+    <script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".btn-menu").click(function(){
+        $(".menu").fadeIn("middle");
+      });
+      $(".btn-close").click(function(){
+	     $(".menu").fadeOut("slow");
+	    });
+    });
+    </script>
 </body>
 </html>
