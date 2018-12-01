@@ -23,12 +23,22 @@ img{max-width: 100%;}
 #intro-fullscreen{display: none;}
 .intro{margin-top: 110px;}
 .intro-description{text-align: center;padding: 0 8%;}
-.intro-description h2{font-size: 1.5em;}
+.intro-description h2{font-size: 1.5em; font-weight: 700;}
 .intro-description h3{font-size: 1.2em; font-style: italic; color: #aaa; margin-bottom: 40px;}
 
 .intro-form{padding: 0 2%;}
 .intro-form form h2, .intro-form form h3{display: none;}
 .form-group{padding: 0 4%;}
+/* MARCAS */
+.marcas{padding: 8%;}
+.marcas h2{font-size: 1.5em; font-weight: 700; text-align: center; margin-bottom: 40px;}
+.marcas img{width: 120px; margin: 0 15px;}
+/* NOSSO SERVICO */
+.servico-resenha h2{font-size: 1.5em; font-weight: 700;}
+.servico-resenha h3{font-size: 1.2em;}
+.servico-resenha p{font-size: 1.2em;}
+.servico-img img{width: 300px; margin: 0 auto; display: block;}
+
 /*FOOTER*/
 /*RODAPE*/
 .rodape-container{text-align: center;}
@@ -48,11 +58,14 @@ img{max-width: 100%;}
 }
 /* MEDIUM DEVIDES - TABLETS & DESKTOPS */
 @media screen and (min-width: 960px){
-	.head-container{padding: 1% 6%;}
-	.intro{background: #a7e56e; margin-top: 0;}
+	.head-container{padding: 1% 6%; background: #fff;}
+	.logo{color: #1a2819;}
+	.menu li a{color: #1a2819}
+	.intro{background: url(../img/bg3.jpg) center center; margin-top: 0;}
+	/* #a7e56e; */
 	.intro-description{width: 40%; float: left;}
 	.intro-form{width: 60%; float: left;}
-	.intro-description{color: #fff; margin-top: 66px; text-align: left; padding: 2%;}
+	.intro-description{color: #fff; margin-top: 66px; text-align: left; padding: 2%; text-shadow: 2px 2px #000;}
 	.intro-description h2{font-size: 1.6em; line-height: 40px;}
 	/* .intro-description h3{font-size: 1em; font-style: italic; color: #fff;} */
 	.intro-form{margin-top: 45px; padding: 0 2%;}
@@ -62,6 +75,9 @@ img{max-width: 100%;}
 	.intro-form form h3{font-size: 1.2em; margin-bottom: 20px;}
 	#intro-mobile{display: none;}
 	#intro-fullscreen{display: block;}
+	.servico-img, .servico-resenha{width: 50%; float: left;}
+	.servico-resenha{padding-left: 16%; padding-right: 0;}
+	.servico-img img{float: left; margin-left: 60px;}
 }
 /* LARGE DEVICES */
 @media screen and (min-width: 1024px){
@@ -75,7 +91,7 @@ img{max-width: 100%;}
 	.menu{width: auto; height: 56px; line-height: 56px; float: right; 
 		background: transparent; display: block!important; position: static;}
 	.menu li{padding: 0; float: left;}
-	.menu li a{font-size: 1.2em; color: #3e873d; padding: 15px; font-weight: 400;}
+	.menu li a{font-size: 1.2em; padding: 15px; font-weight: 400;}
 	.menu li a:hover{color: #fff; border: none;}
 	#toTop{display: block;}
 	.intro-form, .intro-description{width: 50%; float: left;}
@@ -84,6 +100,8 @@ img{max-width: 100%;}
 	.intro-form{padding: 0;}
 	.intro-form form{width: 89%; margin-top: 0; float: left; padding: 6% 4%}
 	.intro-description h2{font-size: 2em;}
+	.marcas{padding: 3% 8%;}
+	.marcas img{width: 100px;}
 	/* .intro-description h3{font-size: 1.5em;} */
 }
 
@@ -91,4 +109,5 @@ img{max-width: 100%;}
 colors
 vd sc: 3e873d
 vd cl: a7e56e
+vd sc: color: #1a2819
 */
