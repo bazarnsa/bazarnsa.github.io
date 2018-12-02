@@ -14,10 +14,10 @@ img{max-width: 100%;}
 	border-radius: 56px; cursor: pointer; background-color: #3e873d;}
 /*NAV*/
 .menu{display: none; width: 70%; height: 100%; position: fixed; background: rgba(0,0,0,0.9); top: 0; left: 0;}
-.btn-close{font-size: 1.5em; color: #fff; float: right; cursor: pointer; margin: 2% 3% 0 0;}
+.btn-close{font-size: 1.8em; color: #fff!important; float: right; cursor: pointer; margin: 2% 3% 0 0;}
 .menu ul{width: 100%; float: left; text-align: center;}
 .menu li{padding: 1.5%;}
-.menu li a{font-size: 2em; color: #fff; padding: 1.5% 3%;}
+.menu li a{font-size: 1.5em; color: #fff; padding: 1.5% 3%;}
 .menu li a:hover{border: 2px solid #222;}
 /*INTRO*/
 #intro-fullscreen{display: none;}
@@ -30,7 +30,7 @@ img{max-width: 100%;}
 .intro-form form h2, .intro-form form h3{display: none;}
 .form-group{padding: 0 4%;}
 /* MARCAS */
-.marcas{padding: 3%; margin-top: 20px;}
+.marcas{margin-top: 20px;}
 .marcas h2{font-size: 1.5em; font-weight: 700; text-align: center; margin-bottom: 40px;}
 .marca-images{padding: 0 6%;}
 .marca-images img{width: 120px; margin: 5px;}
