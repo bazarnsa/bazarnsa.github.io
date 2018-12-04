@@ -60,10 +60,10 @@ img{max-width: 100%;}
 }
 /* MEDIUM DEVIDES - TABLETS & DESKTOPS */
 @media screen and (min-width: 960px){
-	.head-container{padding: 1% 6%; background: #fff;}
-	.logo{color: #1a2819;}
-	.menu li a{color: #1a2819}
-	.intro{background: url(../img/bg3.jpg) center center; margin-top: 0;}
+	.head-container{padding: 1% 6%; background: url(../img/lousa.jpg) center top}
+	.logo{color: #fff;}
+	.menu li a{color: #fff}
+	.intro{background: url(../img/lousa.jpg) center top; margin-top: 0;}
 	/* #a7e56e; */
 	.intro-description{width: 40%; float: left;}
 	.intro-form{width: 60%; float: left;}
