@@ -5,6 +5,7 @@ body{background-color: #000;} /*#111*/
 a{text-decoration: none;}
 ul{list-style: none;}
 img{max-width: 100%;}
+.sub-title h2:after{content: ""; width: 100%; margin-top: 10px; margin-bottom: 10px; height: 1px; background: linear-gradient(to right, #3e873d, #aaa 90%); display: block;}
 /* h1, h2, h3, h4{text-shadow: 2px 2px #000;} */
 .container-default{width: 100%; padding: 3% 4%; float: left;}
 /*HEADER*/
@@ -31,14 +32,19 @@ img{max-width: 100%;}
 .form-group{padding: 0 4%;}
 /* MARCAS */
 .marcas img{width: 80px; margin-right: 20px;}
+/* SOBRE NÓS */
+.featurette{padding: 3% 4%;}
+/* AVALIAÇÕES */
+.featurette-heading{font-weight: 700;}
 .img-fluid{height: 400px;}
-/* CONTATO */	
+/* CONTATO */
 .contato, .form-contato{padding: 3% 0; text-align: left; float: left;}
 .form-contato{float: right;}
-.contato h2{font-weight: 700; font-size: 1.5em; margin-left: 6px; color: #aaa;}
+.contato-container h2{font-weight: 700;}
+.contato h2{font-weight: 700; font-size: 1.5em; margin-left: 6px; color: #222;}
 .contato h3{color: #222; line-height: 1.5em;}
 .contato h4{color: #aaa; line-height: 1.2em; font-size: 1.3em;}
-.form-contato h3{font-weight: 700; font-size: 1.5em; color: #aaa;}
+.form-contato h3{font-weight: 700; font-size: 1.5em; color: #222;}
 .font-italic{font-style: italic;}
 .form-contato input[type=text]{width: 60%;  padding: 1%; border: 1px solid #ccc; border-radius: 4px; margin-top: 4%; color: #000;}
 .form-contato input[type=email]{width: 38%; padding: 1%; border: 1px solid #ccc; border-radius: 4px; color: #000;}
@@ -49,11 +55,11 @@ img{max-width: 100%;}
 /*FOOTER*/
 /*RODAPE*/
 .rodape-container{text-align: center;}
-#toTop{display: none; background-color: transparent; color: #a1a1a1; font-size: 1.2em; cursor: pointer;}
-.social-icons a{font-size: 1.5em; color: #aaa; margin-right: 3%;}
+#toTop{display: none; background-color: transparent; color: #fff; font-size: 1.2em; cursor: pointer;}
+.social-icons a{font-size: 1.5em; color: #fff; margin-right: 3%;}
 .social-icons a:last-child{margin-right: 0;}
 .social-icons a:hover{color: rgb(255,255,255);}
-.copyright{margin-top: 2%; /*color: rgba(255,255,255,0.7)*/ color: #000;}
+.copyright{margin-top: 2%; /*color: rgba(255,255,255,0.7)*/ color: #fff;}
 /*MOBILE FIRST*/
 /* SMALL DEVICES */
 @media screen and (min-width: 480px){
@@ -65,6 +71,7 @@ img{max-width: 100%;}
 }
 /* MEDIUM DEVIDES - TABLETS & DESKTOPS */
 @media screen and (min-width: 960px){
+	.sub-title h2:after{width: 40%;}
 	.head-container{padding: 1% 6%; background: url(../img/lousa.jpg) center top}
 	.logo{color: #fff;}
 	.menu li a{color: #fff}
@@ -90,8 +97,11 @@ img{max-width: 100%;}
 	/* SOBRE NÓS */
 	.sobre-nos p{width: 60%;}
 	/* CONTATO */
+	.contato-container{padding: 3% 8%;}
 	.contato{width: 40%;}
 	.form-contato{width: 60%;}
+	/* RODAPÉ */
+	.rodape-container{background: url(../img/lousa.jpg) center top;}
 }
 /* LARGE DEVICES */
 @media screen and (min-width: 1024px){
@@ -99,7 +109,7 @@ img{max-width: 100%;}
 }
 /* LARGE DEVICES - WIDE SCREEN */
 @media screen and (min-width: 1280px){
-	.head-container{height: 65px; padding: 1% 8%;}
+	.head-container{height: 65px; padding: .5% 8%;}
 	.btn-menu{display: none;}
 	.btn-close{display: none;}
 	.menu{width: auto; height: 56px; line-height: 56px; float: right; 

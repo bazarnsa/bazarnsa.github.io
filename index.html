@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-<body>
+<body id="myPage">
     <!--HEADER-->
     <header class="head-container container-default">
         <a href="index.html"><h3 class="logo">Bazar NSA</h3></a>
@@ -25,10 +25,10 @@
         <nav class="menu">
             <a class="btn-close"><i class="fa fa-times"></i></a>
             <ul>
-            <li><a href="#">Nosso serviço</a></li>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Avaliações</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#myPage">Nosso serviço</a></li>
+            <li><a href="#sobre-nos">Sobre nós</a></li>
+            <li><a href="#feedback">Avaliações</a></li>
+            <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -90,64 +90,77 @@
         <img src="./img/leoeleo.jpg" alt="leoeleo">
         <img src="./img/bic.png" alt="bic" style="margin-right: 0"/>
     </div>
-    <div class="container-default marketing">
+    <div class="container-default marketing" id="sobre-nos">
         <br>
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Sobre nós</h2>
+            <div class="sub-title">
+                <h2 class="featurette-heading">Sobre nós</h2>
+            </div>
             <br>
-            <p class="lead">Inaugurada pelo Sr. <span style="color: #3e873d;">José Miguel de Miranda Filho</span>, com mais de 50 anos de história na cidade de Salesópolis, interior de São Paulo, a Papelaria e Armarinhos <span style="color: #3e873d;">Bazar NSA</span> sempre teve como objetivo e preocupação, oferecer o melhor aos seus clientes.  <br>
-            Desde seu nascimento, em 1967, nosso comércio se atualiza constantemente. Esse cuidado envolve desde a profissionalização e o treinamento dos funcionários à comunicação visual da loja e à arquitetura interna de seu espaço. <span style="color: #3e873d;">Hoje emplacando no mundo virtual</span>, com a finalidade de sempre atender de melhor maneira seus amigos e clientes.
+            <p class="lead">Inaugurada pelo Sr. <span style="color: #3e873d; font-weight: 700">José Miguel de Miranda Filho</span>, com mais de 50 anos de história na cidade de Salesópolis, interior de São Paulo, a Papelaria e Armarinhos <span style="color: #3e873d; font-weight: 700">Bazar NSA</span> sempre teve como objetivo e preocupação, oferecer o melhor aos seus clientes.  <br>
+            Desde seu nascimento, em 1967, nosso comércio se atualiza constantemente. Esse cuidado envolve desde a profissionalização e o treinamento dos funcionários à comunicação visual da loja e à arquitetura interna de seu espaço. <span style="color: #3e873d; font-weight: 700">Hoje emplacando no mundo virtual</span>, com a finalidade de sempre atender de melhor maneira seus amigos e clientes.
             Afinal, além de muita economia, a empresa quer proporcionar conforto e uma ótima experiência a todos os clientes.</p>
           </div>
           <div class="col-md-5">
             <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px;" src="./img/banner.jpg" data-holder-rendered="true">
           </div>
         </div>
-        <hr class="featurette-divider">
+        <div class="container-default" id="feedback">
         <br>
-        <h2 class="featurette-heading">O que estão falando...</h2>
+        <div class="sub-title">
+            <br>
+            <h2 class="featurette-heading">feedback</h2>
+        </div>
         <br>
         <!-- Three columns of text below the carousel -->
-        <div class="row" style="text-align: center;">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="./img/leandro.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Leandro Machado</h2>
-            <p>"Quero muito agradecer pelo carinho e cuidado que tiveram com a lista escolar do meu filho !
-                Tudo certo e o melhor de tudo alta qualidade dos matérias e o atendimento super 10 !
-                Indico para todos Bazar Nossa Senhora Aparecida - Zé Miguel !"
-            </p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="./img/silvana.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Silvana Leal</h2>
-            <p>"Quero muito agradecer ao carinho e cuidado que tiveram com a lista do meu filho
-                Tudo certinho e o melhor de tudo ainda recebi em casa obrigada Vivian
-                Super indico este bazar Maravilhoso!!!!!!!!!"
-            </p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="./img/talita.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Talita Gonçalves</h2>
-            <p>"Meninas estou encantada com o atendimento e preço desta papelaria. mandei um orçamento pelo Whats em poucos minutos me retornaram, o preço em relação ao outros lugares super compensou, e me entregaram em casa 😍"</p>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-        <br>
+            <div class="row" style="text-align: center;">
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="./img/leandro.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>Leandro Machado</h2>
+                <p>"Quero muito agradecer pelo carinho e cuidado que tiveram com a lista escolar do meu filho !
+                    Tudo certo e o melhor de tudo alta qualidade dos matérias e o atendimento super 10 !
+                    Indico para todos Bazar Nossa Senhora Aparecida - Zé Miguel !"
+                </p>
+                <img src="./img/estrelas.png" alt="avaliacao" width="180">
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="./img/silvana.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>Silvana Leal</h2>
+                <p>"Quero muito agradecer ao carinho e cuidado que tiveram com a lista do meu filho
+                    Tudo certinho e o melhor de tudo ainda recebi em casa obrigada Vivian
+                    Super indico este bazar Maravilhoso!!!!!!!!!"
+                </p>
+                <img src="./img/estrelas.png" alt="avaliacao" width="180">
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="rounded-circle" src="./img/talita.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>Talita Gonçalves</h2>
+                <p>"Meninas estou encantada com o atendimento e preço desta papelaria. mandei um orçamento pelo Whats em poucos minutos me retornaram, o preço em relação ao outros lugares super compensou, e me entregaram em casa 😍"</p>
+                <img src="./img/estrelas.png" alt="avaliacao" width="180">
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+            <br>
+        </div>
+        
         <!-- /END THE FEATURETTES -->
 
       </div>
     <!--CONTATO-->
-    <section class="contato-container container-default">
-        <h2 class="featurette-heading">Contato</h2>
+    <section class="contato-container container-default" id="contato">
+        <br>
+        <br>
+        <div class="sub-title">
+            <h2 class="featurette-heading">Contato</h2>
+        </div>
         <div class="contato">
-          <h3>Bazar NSA</h3>
             <h4>Bazar, papelaria, armarinhos, aviamento e artigos escolares</h4><br>
             <p><i class="fa fa-phone" aria-hidden="true" style="color: #aaa;"></i> (11)4696-8744</p>
             <p><i class="fa fa-phone" aria-hidden="true" style="color: #aaa;"></i> (11)97284-5429</p>
             <p><i class="fa fa-envelope" aria-hidden="true" style="color: #aaa;"></i> bazarzemiguel@gmail.com</p>
         </div>
         <div class="form-contato">
-          <h3 class="slideanim">Mande a sua dúvida ou nos deixem uma mensagem!</h3>
+          <h3>Mande a sua dúvida ou nos deixem uma mensagem!</h3>
           <form action="/action_page.php">
             <input type="text" name="text" name="text" placeholder="Digite seu nome...">
             <input type="email" name="email" placeholder="Digite seu e-mail...">
@@ -180,6 +193,32 @@
 	     $(".menu").fadeOut("slow");
 	    });
     });
+    //Smooth Scrolling
+    $(document).ready(function(){
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".menu li a, .social-icons button a[href='#contato'], footer a[href='#myPage']").on('click', function(event) {
+
+       // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+          });
+        } // End if
+      });
+    })
     </script>
 </body>
 </html>
