@@ -9,7 +9,7 @@ img{max-width: 100%;}
 /* h1, h2, h3, h4{text-shadow: 2px 2px #000;} */
 .container-default{width: 100%; padding: 3% 4%; float: left;}
 /*HEADER*/
-.head-container{background-color: #a7e56e; position: fixed; top: 0; z-index: 1; opacity: 0.9;}
+.head-container{background-color: #3e873d; position: fixed; top: 0; z-index: 1; opacity: 0.9;}
 .logo{float: left; margin-top: 10px; color: #fff; font-size: 1.5; font-weight: 700;}
 .btn-menu{width: 56px; height: 56px; float: right; text-align: center; color: #fff; 
 	border-radius: 56px; cursor: pointer; background-color: #3e873d;}
@@ -43,7 +43,7 @@ img{max-width: 100%;}
 .contato-container h2{font-weight: 700;}
 .contato h2{font-weight: 700; font-size: 1.5em; margin-left: 6px; color: #222;}
 .contato h3{color: #222; line-height: 1.5em;}
-.contato h4{color: #aaa; line-height: 1.2em; font-size: 1.3em;}
+.contato h4{color: #444; line-height: 1.2em; font-size: 1.3em;}
 .form-contato h3{font-weight: 700; font-size: 1.5em; color: #222;}
 .font-italic{font-style: italic;}
 .form-contato input[type=text]{width: 60%;  padding: 1%; border: 1px solid #ccc; border-radius: 4px; margin-top: 4%; color: #000;}
@@ -54,7 +54,7 @@ img{max-width: 100%;}
 
 /*FOOTER*/
 /*RODAPE*/
-.rodape-container{text-align: center;}
+.rodape-container{text-align: center; background-color: #3e873d; }
 #toTop{display: none; background-color: transparent; color: #fff; font-size: 1.2em; cursor: pointer;}
 .social-icons a{font-size: 1.5em; color: #fff; margin-right: 3%;}
 .social-icons a:last-child{margin-right: 0;}

@@ -80,7 +80,7 @@
             </form>
         </div>
     </div>
-    <div class="marcas container-default">
+    <div class="marcas container-default slideanim">
         <img src="./img/triss.png" alt="triss"/>
         <img src="./img/faber.png" alt="faber" style="margin-right: 0"/>
         <img src="./img/mercur.jpg" alt="mercur">
@@ -98,7 +98,7 @@
                 <h2 class="featurette-heading">Sobre nós</h2>
             </div>
             <br>
-            <p class="lead">Inaugurada pelo Sr. <span style="color: #3e873d; font-weight: 700">José Miguel de Miranda Filho</span>, com mais de 50 anos de história na cidade de Salesópolis, interior de São Paulo, a Papelaria e Armarinhos <span style="color: #3e873d; font-weight: 700">Bazar NSA</span> sempre teve como objetivo e preocupação, oferecer o melhor aos seus clientes.  <br>
+            <p class="lead">Inaugurada pelo Sr. <span class="slideanim" style="color: #3e873d; font-weight: 700">José Miguel de Miranda Filho</span>, com mais de 50 anos de história na cidade de Salesópolis, interior de São Paulo, a Papelaria e Armarinhos <span style="color: #3e873d; font-weight: 700">Bazar NSA</span> sempre teve como objetivo e preocupação, oferecer o melhor aos seus clientes.  <br>
             Desde seu nascimento, em 1967, nosso comércio se atualiza constantemente. Esse cuidado envolve desde a profissionalização e o treinamento dos funcionários à comunicação visual da loja e à arquitetura interna de seu espaço. <span style="color: #3e873d; font-weight: 700">Hoje emplacando no mundo virtual</span>, com a finalidade de sempre atender de melhor maneira seus amigos e clientes.
             Afinal, além de muita economia, a empresa quer proporcionar conforto e uma ótima experiência a todos os clientes.</p>
           </div>
@@ -115,7 +115,7 @@
         <br>
         <!-- Three columns of text below the carousel -->
             <div class="row" style="text-align: center;">
-              <div class="col-lg-4">
+              <div class="col-lg-4 slideanim">
                 <img class="rounded-circle" src="./img/leandro.jpg" alt="Generic placeholder image" width="140" height="140">
                 <h2>Leandro Machado</h2>
                 <p>"Quero muito agradecer pelo carinho e cuidado que tiveram com a lista escolar do meu filho !
@@ -124,7 +124,7 @@
                 </p>
                 <img src="./img/estrelas.png" alt="avaliacao" width="180">
               </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
+              <div class="col-lg-4 slideanim">
                 <img class="rounded-circle" src="./img/silvana.jpg" alt="Generic placeholder image" width="140" height="140">
                 <h2>Silvana Leal</h2>
                 <p>"Quero muito agradecer ao carinho e cuidado que tiveram com a lista do meu filho
@@ -133,7 +133,7 @@
                 </p>
                 <img src="./img/estrelas.png" alt="avaliacao" width="180">
               </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
+              <div class="col-lg-4 slideanim">
                 <img class="rounded-circle" src="./img/talita.jpg" alt="Generic placeholder image" width="140" height="140">
                 <h2>Talita Gonçalves</h2>
                 <p>"Meninas estou encantada com o atendimento e preço desta papelaria. mandei um orçamento pelo Whats em poucos minutos me retornaram, o preço em relação ao outros lugares super compensou, e me entregaram em casa 😍"</p>
@@ -174,9 +174,9 @@
     <footer class="rodape-container container-default">
         <a href="#myPage" id="toTop"><i class="fa fa-chevron-up"></i></a><br>
         <div class="social-icons">
-            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.facebook.com/armarinhos.zemiguel/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
             <a href="#"><i class="fa fa-envelope"></i></a>
         </div><br>
         <p class="copyright">
@@ -219,6 +219,17 @@
         } // End if
       });
     })
+    //slideain
+    $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
+    });
+});
     </script>
 </body>
 </html>
