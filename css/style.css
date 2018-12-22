@@ -74,10 +74,10 @@ img{max-width: 100%;}
 /* MEDIUM DEVIDES - TABLETS & DESKTOPS */
 @media screen and (min-width: 960px){
 	.sub-title h2:after{width: 40%;}
-	.head-container{padding: 1% 6%; background: url(../img/lousa.jpg) center top}
+	.head-container{padding: 1% 6%; background: transparent;}
 	.logo{color: #fff;}
 	.menu li a{color: #fff}
-	.intro{background: url(../img/lousa.jpg) center top; margin-top: 0;}
+	.intro{background: url(../img/NSA.png) top left no-repeat; margin-top: 0;}
 	/* #a7e56e; */
 	.intro-description{width: 40%; float: left;}
 	.intro-form{width: 60%; float: left;}
