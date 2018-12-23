@@ -18,9 +18,9 @@
 <body id="myPage">
     <!--HEADER-->
     <header class="head-container container-default">
-        <a href="index.html"><h3 class="logo">Bazar NSA</h3></a>
+        <a href="#" class="logo">Bazar NSA</a>
         <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
-        <nav class="menu">
+        <nav class="menu" id="menu">
             <a class="btn-close"><i class="fa fa-times"></i></a>
             <ul>
             <li><a href="#myPage">Nosso serviço</a></li>
@@ -38,30 +38,28 @@
             <h2>lista de material</h2>
             <h3>Que nós retornaremos o orçamento.</h3>
         </div>
-        <div class="intro-description" id="intro-fullscreen">
-           
-        </div>
+        <div class="intro-description" id="intro-fullscreen"></div>
         <div class="intro-form">
-            <form>
+            <form action="https://formspree.io/gabriel_mcunha@hotmail.com" method="POST">
                 <h2>Envie as informações da sua lista de material.</h2>
                 <h3>Que nós retornaremos nosso orçamento.</h3>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome:">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="Nome:">
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email: name@example.com">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="Email: name@example.com">
                 </div>
                 <div class="form-group row">
                     <div class="col-6" style="padding-right: 0;">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Cidade: ">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="city" placeholder="Cidade: ">
                     </div>
                     <div class="col-6" style="padding-left: 4px;">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Bairro: ">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="neighbor" placeholder="Bairro: ">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Envie sua lista</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    <input type="file" name="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Nos conte mais detalhes:</label>
@@ -92,8 +90,8 @@
                 <h2 class="featurette-heading">Sobre nós</h2>
             </div>
             <br>
-            <p class="lead">Inaugurada pelo Sr. <span class="slideanim" style="color: #3e873d; font-weight: 700">José Miguel de Miranda Filho</span>, com mais de 50 anos de história na cidade de Salesópolis, interior de São Paulo, a Papelaria e Armarinhos <span style="color: #3e873d; font-weight: 700">Bazar NSA</span> sempre teve como objetivo e preocupação, oferecer o melhor aos seus clientes.  <br>
-            Desde seu nascimento, em 1967, nosso comércio se atualiza constantemente. Esse cuidado envolve desde a profissionalização e o treinamento dos funcionários à comunicação visual da loja e à arquitetura interna de seu espaço. <span style="color: #3e873d; font-weight: 700">Hoje emplacando no mundo virtual</span>, com a finalidade de sempre atender de melhor maneira seus amigos e clientes.
+            <p class="lead">Inaugurada pelo Sr. <span class="slideanim" style="color: #d6c9bc; font-weight: 700">José Miguel de Miranda Filho</span> na cidade de Salesópolis, interior de São Paulo, a Papelaria e Armarinhos <span style="color: #d6c9bc; font-weight: 700">Bazar NSA</span> sempre teve como objetivo e preocupação, oferecer o melhor aos seus clientes.  <br>
+            Desde seu surgimento, em 1967, nosso comércio se atualiza constantemente. Esse cuidado envolve desde a profissionalização e o treinamento dos funcionários à comunicação visual da loja e à arquitetura interna de seu espaço. Com mais de 50 anos de história e <span style="color: #d6c9bc; font-weight: 700">hoje emplacando no mundo virtual</span>, com a finalidade de sempre atender de melhor maneira seus amigos e clientes.
             Afinal, além de muita economia, a empresa quer proporcionar conforto e uma ótima experiência a todos os clientes.</p>
           </div>
           <div class="col-md-5">
@@ -104,7 +102,7 @@
         <br>
         <div class="sub-title">
             <br>
-            <h2 class="featurette-heading">feedback</h2>
+            <h2 class="featurette-heading">feedbacks</h2>
         </div>
         <br>
         <!-- Three columns of text below the carousel -->
@@ -153,7 +151,7 @@
             </ul>
         </div>
         <div class="form-contato">
-          <h3>Mande a sua dúvida ou nos deixem uma mensagem!</h3>
+          <h3>Mande a sua dúvida ou nos deixem uma mensagem :)</h3>
           <form action="/action_page.php">
             <input type="text" name="text" name="text" placeholder="Digite seu nome...">
             <input type="email" name="email" placeholder="Digite seu e-mail...">
@@ -167,25 +165,26 @@
     <footer class="rodape-container container-default">
         <a href="#myPage" id="toTop"><i class="fa fa-chevron-up"></i></a><br>
         <div class="social-icons">
-            <a href="https://www.facebook.com/armarinhos.zemiguel/" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.facebook.com/armarinhos.zemiguel/" 
+            target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-envelope"></i></a>
         </div><br>
         <p class="copyright">
-            @Copyright - Todos os direitos reservados.
+            @Copyright 2019 - Todos os direitos reservados.
         </p>
     </footer>
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script>
-    $(document).ready(function(){
-      $(".btn-menu").click(function(){
-        $(".menu").fadeIn("middle");
-      });
-      $(".btn-close").click(function(){
-	     $(".menu").fadeOut("slow");
-	    });
-    });
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("menu").style.background = "#efe1d1";
+          } else {
+            document.getElementById("menu").style.background = "transparent";
+          }
+        } 
     //Smooth Scrolling
     $(document).ready(function(){
       // Add smooth scrolling to all links in navbar + footer link

@@ -5,14 +5,15 @@ body{background-color: #000;} /*#111*/
 a{text-decoration: none;}
 ul{list-style: none;}
 img{max-width: 100%;}
-.sub-title h2:after{content: ""; width: 100%; margin-top: 10px; margin-bottom: 10px; height: 1px; background: linear-gradient(to right, #3e873d, #aaa 90%); display: block;}
+.sub-title h2:after{content: ""; width: 100%; margin-top: 10px; margin-bottom: 10px; height: 1px; background: #efe1d1; display: block;}
 /* h1, h2, h3, h4{text-shadow: 2px 2px #000;} */
 .container-default{width: 100%; padding: 3% 4%; float: left;}
 /*HEADER*/
-.head-container{background-color: #4caf50; position: fixed; top: 0; z-index: 1; opacity: 0.9;}
-.logo{float: left; margin-top: 10px; color: #fff; font-size: 1.5; font-weight: 700;}
+.head-container{background-color: #efe1d1; position: fixed; top: 0; z-index: 1; opacity: 0.9;}
+.logo{float: left; margin-top: 10px; color: #fff; font-size: 1.8em; font-weight: 700;}
+.logo:hover{text-decoration: none; color: #a3988d;}
 .btn-menu{width: 56px; height: 56px; float: right; text-align: center; color: #fff; 
-	border-radius: 56px; cursor: pointer; background-color: #3e873d;}
+	border-radius: 56px; cursor: pointer; background-color: #d6c9bc;}
 /*NAV*/
 .menu{display: none; width: 70%; height: 100%; position: fixed; background: rgba(0,0,0,0.9); top: 0; left: 0;}
 .btn-close{font-size: 1.8em; color: #fff!important; float: right; cursor: pointer; margin: 2% 3% 0 0;}
@@ -56,12 +57,12 @@ img{max-width: 100%;}
 .form-contato input[type=submit]{float: right; background-color: #4caf50; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; margin-top: 20px;}
 /*input[type=submit]:hover{background-color: #45a049;}*/
 /*RODAPE*/
-.rodape-container{text-align: center; background: linear-gradient(to top, #3e873d, #4caf50)}
-#toTop{display: none; background-color: transparent; color: #fff; font-size: 1.2em; cursor: pointer;}
-.social-icons a{font-size: 1.5em; color: #fff; margin-right: 3%;}
+.rodape-container{text-align: center; background: #efe1d1;}
+#toTop{display: none; background-color: transparent; color: #a3988d; font-size: 1.2em; cursor: pointer;}
+.social-icons a{font-size: 1.5em; color: #a3988d; margin-right: 3%;}
 .social-icons a:last-child{margin-right: 0;}
 .social-icons a:hover{color: rgb(255,255,255);}
-.copyright{margin-top: 2%; /*color: rgba(255,255,255,0.7)*/ color: #fff;}
+.copyright{margin-top: 2%; /*color: rgba(255,255,255,0.7)*/ color: #a3988d;}
 /*MOBILE FIRST*/
 /* SMALL DEVICES */
 @media screen and (min-width: 480px){
@@ -74,28 +75,7 @@ img{max-width: 100%;}
 /* MEDIUM DEVIDES - TABLETS & DESKTOPS */
 @media screen and (min-width: 960px){
 	.sub-title h2:after{width: 40%;}
-	.head-container{padding: 1% 6%; background: transparent;}
-	.logo{color: #fff;}
-	.menu li a{color: #fff}
-	.intro{background: url(../img/NSA.png) top left no-repeat; margin-top: 0;}
 	/* #a7e56e; */
-	.intro-description{width: 40%; float: left;}
-	.intro-form{width: 60%; float: left;}
-	.intro-description{color: #fff; margin-top: 66px; 
-		text-align: left; padding: 2%; 
-		text-shadow: 2px 2px 5px rgba(0,0,0,.7);
-		font-weight: 700;
-		letter-spacing: -1px;
-	}
-	.intro-description h2{font-size: 1.6em; line-height: 40px;}
-	/* .intro-description h3{font-size: 1em; font-style: italic; color: #fff;} */
-	.intro-form{margin-top: 45px; padding: 0 2%;}
-	.intro-form form{background: #fff; padding: 6%; margin-top: 20px; float: right;}
-	.intro-form form h2, .intro-form form h3{display: block; text-align: center;}
-	.intro-form form h2{font-size: 1.5em;}
-	.intro-form form h3{font-size: 1.2em; margin-bottom: 20px;}
-	#intro-mobile{display: none;}
-	#intro-fullscreen{display: block;}
 	/* NOSSO SERVIÇO */
 	.img-fluid{height: 500px;}
 	.servico-img, .servico-resenha{width: 50%; float: left;}
@@ -111,7 +91,7 @@ img{max-width: 100%;}
 	.contato ul li a{font-size: 1.2em;}
 	.form-contato{width: 60%;}
 	/* RODAPÉ */
-	.rodape-container{background: url(../img/lousa.jpg) center top;}
+	.rodape-container{background: #efe1d1;}
 }
 /* LARGE DEVICES */
 @media screen and (min-width: 1024px){
@@ -119,15 +99,36 @@ img{max-width: 100%;}
 }
 /* LARGE DEVICES - WIDE SCREEN */
 @media screen and (min-width: 1280px){
-	.head-container{height: 65px; padding: .5% 8%;}
+	.head-container{height: 65px; padding: .5% 8%; background: transparent;}
 	.btn-menu{display: none;}
 	.btn-close{display: none;}
-	.menu{width: auto; height: 56px; line-height: 56px; float: right; 
-		background: transparent; display: block!important; position: static;}
-	.menu li{padding: 0; float: left;}
-	.menu li a{font-size: 1.2em; padding: 15px; font-weight: 400;}
-	.menu li a:hover{color: #fff; border: none;}
+	.menu{width: 100%; height: 56px; line-height: 56px; float: right; 
+		background: transparent; display: block!important; position: fixed;
+		padding: 0 8%;}
+	.menu li{padding: 0; float: right;}
+	.menu li a{font-size: 1.47em; padding: 15px; font-weight: 400;}
+	.menu li a:hover{border: none; opacity: 0.9;}
 	#toTop{display: block;}
+	#toTop:hover{color: #fff;}
+	.logo{color: #fff; margin-left: 180px; font-weight: 400;}
+	.intro-description{width: 40%; float: left;}
+	.intro-form{}
+	.intro-description{color: #fff; margin-top: 66px; 
+		text-align: left; padding: 2%; 
+		text-shadow: 2px 2px 5px rgba(0,0,0,.7);
+		font-weight: 700;
+		letter-spacing: -1px;
+	}
+	.intro-description h2{font-size: 1.6em; line-height: 40px;}
+	/* .intro-description h3{font-size: 1em; font-style: italic; color: #fff;} */
+	.intro-form{margin-top: 45px; padding: 0 2%; width: 60%; float: left;}
+	.intro-form form{background: #fff; padding: 6%; margin-top: 20px; float: right;}
+	.intro-form form h2, .intro-form form h3{display: block; text-align: center;}
+	.intro-form form h2{font-size: 1.5em;}
+	.intro-form form h3{font-size: 1.2em; margin-bottom: 20px;}
+	#intro-mobile{display: none;}
+	#intro-fullscreen{display: block;}
+	.intro{background: url(../img/NSA.png) top left no-repeat; margin-top: 0;}
 	.intro-form, .intro-description{width: 50%; float: left;}
 	.intro-description{padding: 4.2%; margin-top: 45px;}
 	.intro-description h2{font-size: 1.7em; font-weight: 400;}
